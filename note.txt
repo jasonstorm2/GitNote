@@ -6,3 +6,15 @@ git pull --rebase origin master
 git push origin master
 注意：第一次push 要加关键字-u
 git push -u origin master
+
+2.删除一个.git文件夹：
+直接输入：rm -rf .git
+
+3.变更git的远程仓库地址：
+git remote set-url origin xxxx
+
+或者 先删除地址，再重新添加
+git remote rm origin
+git remote add origin https://***********
+
+或者 直接修改.git文件夹里的config配置
