@@ -1,0 +1,8 @@
+1.上传git的时候要先pull下来：
+git pull --rebase
+git push
+完整例子：
+git pull --rebase origin master
+git push origin master
+注意：第一次push 要加关键字-u
+git push -u origin master
