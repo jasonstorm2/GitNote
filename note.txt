@@ -26,3 +26,29 @@ git remote add origin https://***********
     login your-usernmae
 	password your-password
 	重新打开git bash即可，无需再输入用户名和密码----确实可用！！
+	
+5. ~/.ssh目录路径在哪里？？---删除ssk key 时，可用直接删除该目录
+	~ 表示你的home目录，通过 cd ~ 可以进入你的home目录。
+	Linux下任何东西都是文件的形式，目录也叫目录文件，设备也叫设备文件。
+	.ssh 可以是文件，也可以是目录，既然有 ~/.ssh/config 这种写法，那.ssh应该是个目录了。
+	.开头的文件表示隐藏文件，这里.ssh就是个隐藏的目录文件。
+	config是个文件名。
+	
+6.sshkey 生成以及验证
+	网址：https://help.github.com/articles/generating-an-ssh-key/
+  1.是否存在.ssh文件： ls -al ~/.ssh
+  2.生成：		ssh-keygen -t rsa -b 4096 -C "your_email@xxx.com"
+  3.添加SSHKey 到 ssh-agent代理： 
+    确认是否存在：eval "$(ssh-agent -s)"  输出：Agent pid 59566
+	添加key到代理： ssh-add ~/.ssh/id_rsa
+  4.在github上添加ssh key----
+  5.测试ssh连接：ssh -T git@github.com  
+	输出：
+	The authenticity of host 'github.com (192.30.252.1)' can't be established.
+	RSA key fingerprint is nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+	Are you sure you want to continue connecting (yes/no)?
+	yes:
+	Hi username! You've successfully authenticated, but GitHub does not
+	provide shell access.
+
+  
