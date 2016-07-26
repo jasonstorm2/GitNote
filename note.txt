@@ -25,4 +25,4 @@ git remote add origin https://***********
     machine {git account name}.github.com
     login your-usernmae
 	password your-password
-	重新打开git bash即可，无需再输入用户名和密码
+	重新打开git bash即可，无需再输入用户名和密码----确实可用！！
