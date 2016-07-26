@@ -51,4 +51,7 @@ git remote add origin https://***********
 	Hi username! You've successfully authenticated, but GitHub does not
 	provide shell access.
 
+7. GIT退出log等待：直接输入q
+
+8.在.git目录下生成.ignore文件： touch .gitignore
   
