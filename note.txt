@@ -71,4 +71,6 @@ git commit -m 'update .gitignore'
 	3.按-左-上角"Esc"
 	4.输入":wq",注意是冒号+wq,按回车键即可
 11. the second place add.....
+修改后合并
+
   
