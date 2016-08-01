@@ -70,7 +70,8 @@ git commit -m 'update .gitignore'
 	2.修改最上面那行黄色合并信息,可以不修改
 	3.按-左-上角"Esc"
 	4.输入":wq",注意是冒号+wq,按回车键即可
-11. the second place add.....
-修改后合并
+11. git 冲突解决
+两边同时修改，pull后有冲突，手动修改，再add commit push。冲突就解决了。。
+另外一边只需要pull不用再重新修改一遍
 
   
